@@ -32,8 +32,35 @@ int main() {
 	cout << "La suma de los números es " << suma << endl;
 	cout << "El producto de los números es " << producto << endl;
 
-	int matrix1[2][2];
-	int matrix2[2][2];
+	int M[2][2];
+	int N[2][2];
+	
+	M[0][0] = real1;
+	M[0][1] = imag1;
+	M[1][0] = -imag1;
+	M[1][1] = real1;
+	
+	N[0][0] = real2;
+	N[0][1] = imag2;
+	N[1][0] = -imag2;
+	N[1][1] = real2;
+	
+	int S[2][2];
+	int P[2][2];
+	
+		for (int i = 0; i < 2; i++){
+	    for (int j = 0; j < 0; j++){
+	    	P[i][j] = M[i][j] + N [i][j];
+	    }
+	}
+	
+	for (int i = 0; i < 2; i++){
+	    for (int j = 0; j < 0; j++){
+	        for (int k = 0; k < 0; k++){
+	            P[i][j] = M[i][k] * N [k][j];
+	        }
+	    }
+	}
 	
 	return 0;
 }
