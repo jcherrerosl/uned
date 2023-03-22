@@ -3,17 +3,15 @@
 
 using namespace std;
 
-int main(void) {
-	double temp;
-	char unit;
-	
-	// Solicitar entrada del usuario
+int main() {
+	double	temp;
+	char	unit;
+
 	cout << "Escriba temperatura con unidades: ";
 	cin >> temp >> unit;
 	
 	double celsius, fahrenheit, kelvin;
 	
-	// Calcular temperatura en celsius, fahrenheit y kelvin
 	switch (unit) {
 		case 'C':
 			celsius = temp;
@@ -35,9 +33,8 @@ int main(void) {
 			return 1;
 	}
 	
-	// Escribir temperatura en celsius, fahrenheit y kelvin
 	cout << fixed << setprecision(2) << celsius << " C, " << fahrenheit << " F, " << kelvin << " K." << endl;
 	
-	return (0);
+	return 0;
 }
 
